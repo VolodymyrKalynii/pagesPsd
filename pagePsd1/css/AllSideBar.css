@@ -1,0 +1,318 @@
+﻿        /*Початок сайдбару*/
+        .allSidebar{
+            background-color:#161a1b;
+            position:relative;
+            top:0;
+            margin-right:-20px;
+        }
+
+        .top_sidebar{
+            border:red solid 0px;
+	        height:48px;
+            max-width: 1180px;
+            margin: 0 auto;
+            position:relative;
+        }
+        .top_sidebar a{
+            color:#929c9f;
+        }
+        
+        .top_sidebar a:active,.top_sidebar a:focus,.top_sidebar a:hover{
+            color:#dcdf3c;
+        }
+
+        /*Лівий верній сайдбар*/
+        .left_top_sidebar{
+            position:absolute;
+            display:block;
+            z-index:1;
+            padding-top:15px;
+            height:100%;
+            min-width:50%;
+            background-color:#161a1b;
+            margin-left:60px;            
+        }  
+             
+        .left_top_sidebar a{
+            margin-right:30px;
+            text-transform:uppercase;
+            font-size:15px;
+        }
+        .left_top_sidebar a:last-child{
+            margin-right:0;
+        }
+
+        /*Кінець лівого верхнього сайдбару*/
+
+
+        /*Правий верхній сайдбар*/
+        .right_top_sidebar {
+            position:absolute;
+            top:0;
+            right:0;
+            height:48px;
+        }
+
+        .right_top_sidebar *{
+            display:inline-block;
+        }
+
+        /*Вибрір мови*/
+        .len {
+            height:100%;
+            padding:0 5px;
+            margin-right: 22px;
+            margin-left: 37px;
+            position:relative;
+            top:-2px;
+            -webkit-transition-property:all;
+            transition-property: all;
+            -webkit-transition-duration: .5s;
+            transition-duration: .5s;
+            font-size:22px;
+        }
+
+        .len,.fontTrigger{
+            padding-top:10px;
+        }
+
+        .len span{
+            font-size:12px;
+            margin-left:7px;
+        }
+
+        .len:hover{
+            background-color:#dce123;
+        }
+
+        .len:hover a{
+            color:#212628;
+        }
+
+        .len .en{
+            height:0;
+            width:100%;
+            position:absolute;
+            top:48px;
+            left:0;
+            padding-left:5px;
+            padding-top:8px;
+            background-color:#dce123;
+            opacity:0;
+            box-shadow: 0 14px 10px 5px rgba(0,0,0,0.5);
+            -webkit-transition-property:all;
+            transition-property: all;
+            -webkit-transition-duration: .5s;
+            transition-duration: .5s;
+
+        }
+
+        .len:hover .en{
+            height:48px;
+            opacity:1;
+            z-index:1;
+         }
+
+        .en:hover{
+            background-color:#f4f750;
+        }
+
+        /*Зміна шрифту*/
+        .bigFt{
+            font-size:24px;
+        }
+
+        .smalFt{
+            font-size:14px;
+            margin-right:4px;
+        }
+
+        .smalFt span{
+            opacity:0;
+        }
+
+        .fontTrigger:hover a {
+            padding: 0 10px;
+        }
+
+        .fontTrigger:hover .smalFt span { opacity:1}
+
+        .fontTrigger:hover li:last-child a::before { 
+            content: ""; 
+            width: 1px; 
+            height: 100%; 
+            background-color: #929c9f; 
+            position: absolute; 
+            left: -5px;
+        }
+
+        .topSidebarButton{
+            width:33px;
+            height:28px;
+            background-image:url(../images/sidebar_button_640_1a.png);
+            background-repeat:no-repeat;
+            position:absolute;
+            display:none;
+        }
+
+        /*Кінець правого верхнього сайдбару*/
+
+
+        /* Початко правого сайдбару*/
+        #right_sidebar{
+            width:240px;
+            height:100%;
+            position:fixed;
+            right:0;
+            top:0;
+            background-color:#212628;
+            color:#929c9f;
+        }
+
+        .right_sidebarMain{
+            position:relative;
+            background-color:#212628;
+            z-index:1;
+        }
+
+        #right_sidebar a{
+            font:17px Roboto, sans-serif;
+        }
+
+        .search{
+            height:48px;
+            background-color:#161a1b;
+            background-image:url(../images/search.png);
+            background-repeat:no-repeat;
+            background-position:12px;
+            margin-bottom:30px;
+        }
+
+        .search input{
+            color:#929c9f;
+            background-color:#161a1b;
+            font:17px Roboto, sans-serif;
+            margin-top:13px;
+            margin-left:40px;
+            letter-spacing:-0.5px;
+        }
+
+        .lable{
+              font: 17px 'PT Sans',sans-serif;
+              font-weight:bold;
+              padding:5px 0;
+              padding-left:40px; 
+              color:#4b5153;
+        }
+
+        .enterToWB{
+            margin-top:15px;
+            background-image:url(../images/key.png);
+        }
+
+        .ViddilAndBank{
+            background-image:url(../images/mark_map.png);
+        }
+
+        .onlineCol{
+            width:240px;
+            background-color:#161a1b;
+            background-image:url(../images/icon_chat.png);
+            border:none!important;
+        }
+
+        .ent_vidd_onl{
+            border:1px solid #2f3335;
+            padding-top:15px;
+            padding-bottom:16px;
+            padding-left:40px;
+            background-repeat:no-repeat;
+            background-position:12px;
+            -webkit-transition-property:all;
+            transition-property: all;
+            -webkit-transition-duration: .5s;
+            transition-duration: .5s; 
+        }
+
+        .ent_vidd_onl a{
+            color:#dcdf3c;
+        }
+
+        .ent_vidd_onl:hover,.ent_vidd_onl:focus{
+            background-color:#dcdf3c;
+        }
+
+        .ent_vidd_onl:hover a,.ent_vidd_onl:focus a{
+            color:#212628;
+        }
+
+        .ent_vidd_onl:active{
+            background-color:#c2c52e;
+        }
+
+        .enterToWB:hover, .enterToWB:focus{
+            background-image:url(../images/keyHover.png);
+        }
+        
+        .ViddilAndBank:hover,.ViddilAndBank:focus{
+            background-image:url(../images/markMapHover.png);
+        }
+
+        .onlineCol:hover,.onlineCol:focus{
+            background-image:url(../images/icon_chat-hover.png);
+        }
+
+        .SideBarsContainer{
+            margin:15px 0;
+        }
+
+        .SideBarsContainer a{
+            width:240px;
+            display:block;
+            padding:15px 0;
+            padding-left:40px;
+            color:#f8fafc;
+        }
+
+        .bgSlide{
+            width:5.5px;
+            -webkit-transition-property:all;
+            transition-property: all;
+            -webkit-transition-duration: .5s;
+            transition-duration: .5s;
+        }
+        
+        .bgSlidePurple{
+            background-color:#b99dc4;
+        }
+
+        .bgSlideOrange{
+            background-color:#fbaa69;
+        }
+
+        .bgSlide:hover{
+            width:100%;
+        }
+        
+        .right_sidebarBottom{
+            position:absolute;
+            left:0;
+            bottom:0;
+            color:#4b5153;
+            z-index:0;
+        }
+
+        .tel{
+            padding:6.2px 0;
+            padding-left:40px; 
+            margin-bottom:14px;
+            background-image:url(../images/phone.png);
+            background-repeat:no-repeat;
+            background-position:12px,10px;
+        }
+
+        .tel a,.onlineCol a {
+            color:#fff;
+        }       
+
+        /*Кінець правого сайдбару*/

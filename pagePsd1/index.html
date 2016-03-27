@@ -1,0 +1,1089 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="css/reset.css"/>
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500italic,500,700,700italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic&subset=latin,cyrillic,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/StyleSheet.css"/>
+    <link rel="stylesheet" href="css/AllSideBar.css"/>
+    <link rel="stylesheet" href="css/AllHeader.css"/>
+    <link rel="stylesheet" href="css/mainContent.css"/>
+    <link rel="stylesheet" href="css/jquery.formstyler.css"/>
+    <style>
+            /*Під екран 640px*/
+        @media (max-width:640px){
+
+            html{
+                background-color:#161a1b;
+            }
+            .container{
+            width:640px;
+            position:absolute;
+            margin-right:0;
+            border:orange solid 0px;
+            z-index:3;
+            background-color:#fff;
+        }
+
+            #right_sidebar{
+                visibility:hidden;
+            }
+
+            .inContainer{
+            border:0px solid red;
+            position:relative;
+            padding-left:50px;
+            margin-bottom:20px;
+            max-width:610px;
+            /*min-width:300px;*/
+        }
+
+            .inContainer h1{
+            padding-top:20px;
+            font-size:70px;
+        }
+
+            .inContainer h2{
+            /*margin-top:20px;*/
+            font-size:52px;
+        }
+            .inContainer h3{
+            margin-top:50px;
+            font-size:30px;
+        }
+
+            .inContainer p{
+                font-size:27px;
+                margin-top:25px;
+                max-width:none;
+            }
+
+            .inContainer ul{
+                font-size:19pt;
+                /*padding:0;*/
+                font-weight:bold;
+            }
+
+            .slider, .Taxes, .How, .FAQ, .Form, form, .promo{
+                width:610px;
+                margin-left:0;
+            }
+
+            #mask {
+                background-color: rgba(0,0,0,.3);
+                height: 100%;
+                position:absolute;
+                z-index:4;
+                width: 100%;
+                top: 0;
+                left: 0;
+                display:none;
+            }
+
+            /*sidebar*/
+
+            .right_top_sidebar{
+                display:none;
+            }
+            
+            .allSidebar{
+                /*margin:0 auto;*/
+                border:red solid 0px;
+                height:100px;
+                background-color:#161a1b;
+            }
+
+            .left_top_sidebar{
+            width:89px;
+            }
+
+
+            .left_top_sidebar a{  
+                display:block;
+                width:300px;
+                padding:5px 0;
+            }
+
+            .left_top_sidebar a:first-child{
+                width:100px;
+            }
+
+            .left_top_sidebar a:not(:first-child){
+                visibility:hidden;
+            }
+
+            .LTS{
+                width:100px;
+                height:21px;
+            }
+
+            .left_top_sidebar .LTS:hover a{
+                visibility:visible;
+            }
+            
+            .topSidebarButton{
+                display:block;
+                top:35.5px;
+                outline: none;
+                right:33.5px;
+                background-color:#161a1b;
+            }
+            /*sidebar*/
+
+            .headerBar{
+                display:none;
+            }
+
+            /*slider*/
+            .slider{
+                /*height:120%;*/
+                padding-bottom:80px;
+                background-image:url(images/pusanku.png);
+                background-repeat:no-repeat;
+                background-position:195px 483px;
+            }
+
+            .sliderMark{
+                bottom:-320px;
+                left:0;
+                width:100%;
+                background-image:url(images/Polygon-1.png);
+                background-repeat:no-repeat;
+                background-position:580px center;
+            }
+
+            .sliderMark p{
+                margin:0;
+                padding:30px 100px 30px 50px;
+                text-align:left;
+                max-width:none;
+            }
+
+
+            /*Taxes*/
+            .Taxes{
+                padding-top:180px;
+                padding-bottom:30px;
+                overflow:hidden;
+                
+            }
+
+            .tableContainer{
+                margin-left:-20px;
+                overflow:scroll;
+                overflow-y:hidden;
+            }
+
+            .tableContainer table{
+                font-size:25pt;
+                width:1200px;  
+            }
+
+            .tableContainer tr,.tableContainer td{
+                position:relative;
+            }
+
+             .Taxes .displayOn640{
+                display:table-row;
+           }
+
+             tr:first-child, tr td:first-child{
+               color:#b2b2b2;
+               font-size:15pt;
+           }
+
+             tr td:first-child::after{
+                 content: "";
+                 width: 1px; 
+                 height: 180%; 
+                 background-color: #929c9f; 
+                 position: absolute; 
+                 left: 150px;
+                 top:-30px;
+             }
+
+            .Taxes select,.Taxes input[type="button"]{
+                display:none;
+            }
+            /*Taxes*/
+
+            .loyalty{
+                display:none;
+            }
+
+
+            /*How*/
+            /*.How {
+                height:570px;
+            }*/
+
+            .MapHow{
+                display:none;
+            }
+            
+            .HowContent{
+                width:100%;
+                float:none;
+            }
+
+            /*.How ul{
+                margin-left:-15px;
+            }*/
+            /*How*/
+
+            /*Form*/
+            .Form .dani{
+                display:none;
+            }
+
+            .Form .radioBtn input{
+                height:auto;
+                padding:20px 0;
+                font-size:25pt;
+                /*display:block;*/
+                width:100%;
+            }
+
+            .Form p{
+                width:100%;
+            }
+            /*Form*/
+
+            /*promo*/
+
+            .promo{
+                height:450px;
+                background-position:450px bottom;
+            }
+
+            /*.promo1{
+                 background-position:450px bottom;
+            }
+            .promo2{
+                 margin-top:20px;
+                 background-position:465px bottom;
+            }*/
+
+            .promo2Content h2,.promo2Content p,#license{
+                 width:86%;
+            }
+
+            /*footer*/
+            footer ul li{
+                width:500px;
+            }
+
+            .social{
+                margin-top:20px;
+            }
+
+            .form2{
+                width:70%;
+            }
+        }
+
+
+
+    </style>
+    <script src="script/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="script/JavaScript.js" type="text/javascript"></script>
+    <script src="script/adapt.js" type="text/javascript"></script>
+    <script src="script/topSide.js" type="text/javascript"></script>
+    <script src="script/form.js" type="text/javascript"></script>
+    <script src="script/jquery.formstyler.min.js" type="text/javascript"></script>
+    <!--<script>
+        $(document).ready(function () {
+            $('.jq-selectbox li').hover(function () {
+                $('.jq-selectbox__select').addClass('li_hoverr');
+            }, function () {
+                $('.jq-selectbox__select').removeClass('li_hoverr');
+            });
+            $('.show-task').hover(function () {
+                $(this).children('.delete-task').css('color', '#dcdf3c');
+                $(this).children('.jq-checkbox').addClass('jq-checkbox_hover');
+            },
+            function () {
+                $(this).children('.delete-task').css('color', 'black');
+                $(this).children('.jq-checkbox').removeClass('jq-checkbox_hover');
+            })
+            ;
+        })
+    </script>-->
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+</head>
+<body class="pagewrapper">
+            <div class="container">
+                <div id="mask"></div>
+                <div class="allSidebar">
+                    <div class="top_sidebar">
+                        <div class="left_top_sidebar">
+                            <div class="LTS">
+                                <a href="#">Особистий</a>
+                                <a href="#">Малий та середній бізнес</a>
+                                <a href="#">Корпоративний</a>
+                            </div>
+                        </div>
+                        <div class="right_top_sidebar">
+                            <ul class="fontTrigger">
+                                <li><a class="smalFt" href="#0">A<span>-</span></a></li>
+                                <li><a class="bigFt" href="#0">A<span>+</span></a></li>
+                            </ul>
+                            <div class="len">
+                                <a href="#">українська <span>&#9660</span></a>
+                                <a class="en" href="#">english</a>
+                            </div>
+                        </div>
+                        <button class="topSidebarButton"></button>
+                    </div>
+                </div>            
+                <header class="header">
+                    <div class="logo">
+                        <a href="#"><img src="images/logo.png" alt="" /></a>
+                    </div>
+                    <div class="headerBar">
+                        <ul class="headerLi">
+                            <li>
+                                <a href="#">Депозити</a>
+                                <div class="SubHeader">
+                                    <ul>
+                                        <li>
+                                            <p class="headerBarLable">Депозитні програми Ощадбанку</p>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Пункт</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Пункт</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Пункт</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Пункт</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Кредити</a>
+                                <div class="SubHeader otherSection otherSection2Coll">
+
+                                    <ul id="KrSubHeaderCollumn1">
+                                        <li>
+                                            <p class="headerBarLable">Державні програми</p>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Енергокредит</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p class="headerBarLable">Кредитии від Ощадбанку</p>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">На авто</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">На житло<span class="headerBarLable InlineLable">(на вторинному ринку)</span></a>
+
+                                            </div>
+
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Кредитні картки</a>
+                                            </div>
+                                        </li>
+                                        <li></li>
+                                    </ul>
+                                    <ul id="KrSubHeaderCollumn2">
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Споживчі кредити під іпотеку</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Під заставу грошей на депозиті</a>
+                                            </div>
+
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Кредитування під подушку</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Програма перекредитування</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="SubHeadercalk">
+                                        <a href="#">Кредитний Калькулятор</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Картки та рахунки</a>
+                                <div class="SubHeader">
+                                    <ul>
+                                        <li>
+                                            <p class="headerBarLable">Депозитні програми Ощадбанку</p>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Пункт</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Пункт</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Пункт</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Пункт</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Платежі</a>
+                                <div class="SubHeader">
+                                    <ul>
+                                        <li>
+                                            <p class="headerBarLable">Депозитні програми Ощадбанку</p>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Пункт</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Пункт</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Пункт</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Пункт</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">перекази</a>
+                                <div class="SubHeader">
+                                    <ul>
+                                        <li>
+                                            <p class="headerBarLable">Депозитні програми Ощадбанку</p>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Пункт</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Пункт</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Пункт</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Пункт</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <!--Чотири колонки-->
+                                <a href="#">Інші розділи</a>
+                                <div class="SubHeader otherSection otherSection4Coll">
+                                    <div class="SubHeaderSearch">
+                                        <input id="HeaderSearchField" type="text" placeholder="пошук послуг" />
+                                        <input id="ClearHeaderSearchField" type="button" />
+                                    </div>
+                                    <ul id="KrSubHeaderCollumn1">
+                                        <li>
+                                            <p class="headerBarLable">про Ощадбанк</p>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Наглядова рада</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Правління банку</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Керівництво обласних управлінь</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Звітність</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Кар'єра</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Рейтинги</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Міссія та стратегічна мета</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Історія Ощадбанку</a>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                    <ul id="KrSubHeaderCollumn2">
+                                        <li>
+                                            <p class="headerBarLable">депозитні програми</p>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Класичний</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Капітал</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Гнучкий</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Писанка</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Пенсійний</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p class="headerBarLable">інші кредитні програми</p>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">На авто</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Кредитні картки</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <ul id="KrSubHeaderCollumn3">
+                                        <li>
+                                            <p class="headerBarLable">державні кредитні програми</p>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Енергокредит</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Доступне житло</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p class="headerBarLable">інші кредитні програми</p>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">На авто</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">На житло<span class="headerBarLable InlineLable">(на вторинному ринку)</span></a>
+
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Кредитні картки</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Споживчі кредити під іпотеку</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Під заставу грошей на депозиті</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <ul id="KrSubHeaderCollumn4">
+                                        <li>
+                                            <p class="headerBarLable">платіжні картки</p>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Стандартна</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Економна</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Національна</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Універсальна</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Студентська</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Пенсійна</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Зарплатна</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bgSlideYellow bgSlide">
+                                                <a href="#">Соціальна</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+                <div class="slider ">
+                    <div class="inContainer">
+                        <h1>депозит довіра</h1>
+                        <!--<h1 class="DepositPusanka">депозит «писанка»</h1>-->
+                        <p>₴ $</p>
+                        <ul>
+                            <li>Можливість дострокового зняття</li>
+                            <li>Поповнення лише один раз</li>
+                            <li>Виплата відсотків на прикінці терміну</li>
+                        </ul>
+                        <!--<div class="slider3p">
+                            <p>Можливість дострокового зняття</p>
+                            <p>Поповнення лише один раз</p>
+                            <p>Виплата відсотків на прикінці терміну</p>
+                        </div>-->
+
+                        <div class="MinSumDep">
+                            <p>Мінімальна сума депозиту</p>
+                            <p>10 000 ₴</p>
+                        </div>
+                        <div class="sliderMark">
+                            <p>Усі депозити населення, розміщені в Ощадбанку, захищені державою незалежно від суми</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="Taxes blueButton">
+                    <div class="inContainer">
+                        <h1>відсоткові ставки
+                                <select>
+                                    <option>₴ у гривні</option>
+                                    <option>$ у доларах</option>
+                                </select>
+                        </h1>
+                        <p>на 11.10.2015</p>
+                        
+                        <div class="tableContainer">
+                            <table>
+                                <colgroup>
+                                    <col id="col1">
+                                    <col id="col2">
+                                    <col id="col3">
+                                    <col id="col4">
+                                    <col id="col5">
+                                    <col id="col6">
+                                </colgroup>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">від 100 ₴</th>
+                                    <th scope="col">від 1000 ₴</th>
+                                    <th scope="col">від 3000 ₴</th>
+                                    <th scope="col">від 3000 ₴</th>
+                                    <th scope="col">від 3000 ₴</th>
+                                </tr>
+                                <tr>
+                                    <td>1 тиждень</td>
+                                    <td>18,0%</td>
+                                    <td>18,5%</td>
+                                    <td>19%</td>
+                                    <td>19,5%</td>
+                                    <td>20,5%</td>
+                                </tr>
+
+                                <tr>
+                                    <td>2 тижні</td>
+                                    <td>18,5%</td>
+                                    <td>18,5%</td>
+                                    <td>19,5%</td>
+                                    <td>19,5%</td>
+                                    <td>20,5%</td>
+                                </tr>
+                                <tr>
+                                    <td>1 місяць</td>
+                                    <td>18,0%</td>
+                                    <td>18,5%</td>
+                                    <td>19,3%</td>
+                                    <td>19,5%</td>
+                                    <td>20,5%</td>
+                                </tr>
+                                <tr>
+                                    <td>2 місяці</td>
+                                    <td>18,0%</td>
+                                    <td>18,5%</td>
+                                    <td>20%</td>
+                                    <td>19,5%</td>
+                                    <td>20,5%</td>
+                                </tr>
+                                <tr class="displayOn640">
+                                    <td>3 місяці</td>
+                                    <td>19,6%</td>
+                                    <td>19,6%</td>
+                                    <td>19,6%</td>
+                                    <td>19,6%</td>
+                                    <td>19,6%</td>
+                                </tr>
+                                <tr>
+                                    <td>6 місяців</td>
+                                    <td>18,0%</td>
+                                    <td>18,5%</td>
+                                    <td>20,2%</td>
+                                    <td>19,5%</td>
+                                    <td>20,5%</td>
+                                </tr>
+                                <tr class="displayOn640">
+                                    <td>12 місяців</td>
+                                    <td>20,0%</td>
+                                    <td>20,0%</td>
+                                    <td>20,0%</td>
+                                    <td>20,0%</td>
+                                    <td>20,0%</td>
+                                </tr>
+                                <tr class="displayOn640">
+                                    <td>18 місяців</td>
+                                    <td>21,0%</td>
+                                    <td>21,0%</td>
+                                    <td>21,0%</td>
+                                    <td>21,0%</td>
+                                    <td>21,0%</td>
+                                </tr>
+                            </table>
+                        </div>
+
+
+                        <input class="blueButton" type="button" value="порівняти з іншими депозитами" />
+                    </div>
+                </div>
+                <div class="loyalty">
+                    <div class="inContainer">
+                        <h1>програма лояльності</h1>
+                        <p>
+                            У відділенні банку, де відкрито Ваш рахунок Ви можете оформити довіреність
+                            на право розпорядження коштами або заповідальне розпорядження.
+                            Вартість послуги складає до 15 грн. , а для пенсіонерів – БЕЗКОШТОВНО.
+                        </p>
+                        <ul>
+                            <li>Готівкою через касу </li>
+                            <li>За допомогю платіжної картки</li>
+                            <li>Без відвідування відділення Банку, отримувати проценти та розпоряджатися коштами</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="How blueButton">
+                    <div class="inContainer">
+                        <div class="HowContent">
+                            <h1>як відкрити депозит?</h1>
+                            <p>Щоб оформити депозит треба звернутися до найближчого відділення Ощадбанку, маючи при собі наступні документи:</p>
+                            <ul>
+                                <li>— паспорт</li>
+                                <li>— довідку про присвоєння ідентифікаційного номеру</li>
+                            </ul>
+                            <p>За додатковою інформаію можна звертатися до служби підтримки банку онлайн, заповнити онлайн-заявку нижче, або звертатися за телефоном:</p>
+                            <h3>+380 44 363-01-33</h3>
+                        </div>
+                        <div class="MapHow">
+                            <input type="button" value="мапа усіх відділень" />
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="FAQ">
+                    <div class="inContainer">
+                        <h1>інформація, що стане в нагоді</h1>
+                        <h3>Як відбувається зарахування коштів?</h3>
+                        <ul>
+                            <li>Готівкою через касу в день відкриття депозиту</li>
+                            <li> Безготівкове зарахування</li>
+                        </ul>
+                        <h3>Як оформлюється довіреность</h3>
+                        <p>
+                            У відділенні банку, де відкрито Ваш рахунок Ви можете оформити довіреність
+                            на право розпорядження коштами або заповідальне розпорядження.
+                            Вартість послуги складає до 15 грн. , а для пенсіонерів – БЕЗКОШТОВНО.
+                        </p>
+                        <h3>Яка здійснюється отримання процентів та повернення вкладу?</h3>
+                        <ul>
+                            <li>Готівкою через касу</li>
+                            <li>За допомогю платіжної картки</li>
+                            <li>Без відвідування відділення Банку, отримувати проценти та розпоряджатися коштами</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Form">
+                    <div class="inContainer">
+                        <form name="form1">
+                            <h2>заповнити онлайн-заявку</h2>
+                            <div class="radioBtn">
+                                <input class="activeBtn" type="button" />
+                                <input id="PopOform" type="button" value="попереднє оформлення" />
+                            </div>
+                            <p>
+                                Після заповнення заявки з вами взʼяжеться працівник нашого банку та допоможе з подальшим офорлменням депозиту.
+                            </p>
+                            <div class="dani">
+                                <select data-placeholder="оберіть ваше місто">
+                                    <option label="-"></option>
+                                    <option>Київ</option>
+                                    <option>Львів</option>
+                                    <option>Чернівці</option>
+                                </select>
+                                <label for="PIB" class="PIBL">ПІБ</label>
+                                <input type="text" class="PIB" />
+                                <label for="Email" class="EmailL" >E-mail</label>
+                                <input type="text"  name="mail" id="Email" class="Email"/>
+                                <label for="phoneNum" class="TelL">Контактний номер телефону</label>
+                                <input type="text" name="tel" id="phoneNum" class="telF">
+                                <input type="button" value="відправити заявку" onclick="prov_adress(form1)" />
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="promo promo1">
+                    <div class="inContainer">
+                        <div class="promo1Content">
+                            <h2>гроші повертаються</h2>
+                            <p>Акція для держателів безконтактних карток Master Card</p>
+                            <img src="images/promo_img2.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="promo promo2">
+                    <div class="inContainer">
+                        <div class="promo2Content">
+                            <h2>кредитна програма «ощадний дім»</h2>
+                            <p>Бережіть тепло та гроші</p>
+                            <p>Державна кредитна програма на утеплення житла та модернізацію опалювального обладнання.</p>
+                        </div>
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="inContainer">
+                        <ul>
+                            <li>
+                                <p>корисні посилання</p>
+                                <a href="#">Відділення та банкомати</a>
+                                <a href="#">Оплата команальних послуг</a>
+                                <a href="#">Поповнення мобільного</a>
+                                <a href="#">Контакти</a>
+                                <a href="#">Мобільні додатки</a>
+                            </li>
+                            <content class="foter1col"></content>
+                            <li>
+                                <p>контакт-центр ощадбанку</p>
+                                <a href="#">0 800 210 800</a>
+                                <p>безкоштовно зі стаціонарних та мобільних територій на території України</p>
+                                <a href="#">+380 44 363-01-33</a>
+                            </li>
+                            <li class="social">
+                                <p>ощадбанк у соціальних мережах</p>
+                                <a href="#" class="socialFb"></a>
+                                <a href="#" class="socialInsta"></a>
+                                <a href="#" class="socialTw"></a>
+                                <a href="#" class="socialGp"></a>
+                            </li>
+                        </ul>
+                        <div id="license">
+                            <p>© ощадбанк, від 1991</p>
+                            <p>Ліцензія Національного банку України № 148 від 05.10.2011</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        <div id="right_sidebar">
+            <div class="right_sidebarMain">
+                <div class="search">
+                    <input type="text" placeholder="Пошук послуг по банку"/>
+                </div>
+                <div class="lable">
+                    <span>ОЩАДБАНК 24/7</span>
+                </div>
+                <div class="enterToWB ent_vidd_onl">
+                    <a href="#">Увійти до Веб-банкінгу</a>
+                </div>
+                <div class="SideBarsContainer">
+                    <div class="bgSlidePurple bgSlide">
+                        <a href="#">Про Ощад 24/7</a>
+                    </div>
+                    <div class="bgSlidePurple bgSlide">
+                        <a href="#">Мобільні додатки</a>
+                    </div>
+                </div>
+                <div class="lable">
+                    <span>інші послуги</span>
+                </div>
+
+                <div class="SideBarsContainer">
+                    <div class="bgSlideOrange bgSlide">
+                        <a href="#">Комунальні послуги</a>
+                    </div>
+                    <div class="bgSlideOrange bgSlide">
+                        <a href="#">Платежі по рахунках</a>
+                    </div>
+                    <div class="bgSlideOrange bgSlide">
+                        <a href="#">Сплата штрафів</a>
+                    </div>
+                    <div class="bgSlideOrange bgSlide">
+                        <a href="#">Переказ коштів</a>
+                    </div>
+                    <div class="bgSlideOrange bgSlide">
+                        <a href="#">Прибрати квитки</a>
+                    </div>
+                    <div class="bgSlideOrange bgSlide">
+                        <a href="#">Поповнити мобільний</a>
+                    </div>
+                </div>
+                <div class="ViddilAndBank ent_vidd_onl">
+                    <a href="#">Відділення та банкомати</a>
+                </div>
+            </div>
+            <div class="right_sidebarBottom">
+                <div class="lable">
+                    <span>контакт-центр</span>
+                </div>
+                <div class="tel">
+                    <a href="#">0 802 108 00</a>
+                </div>
+                <div class="onlineCol ent_vidd_onl">
+                    <a href="#">Онлайн-допомога</a>
+                </div>
+            </div>
+        </div>
+        <div class="form2Margin">
+            <div class="inContainer" onclick="event.stopPropagation()">
+                <div class="logo2">
+                    <a href="#"><img src="images/logo.png" alt="" /></a>
+                </div>
+                <button id="closeF2"></button>
+                <form class="form2 " name="form2">
+                    
+                    <h2>попереднє оформлення кредиту</h2>
+                    <p>
+                        Після заповнення заявки з вами взʼяжеться працівник нашого банку та допоможе з подальшим офорлменням депозиту.
+                    </p>
+                    <div class="dani">
+                        <label for="PIB" class="PIBL">ПІБ</label>
+                        <input type="text" class="PIB" />
+                        <label for="Emailf2" class="EmailL">E-mail:</label>
+                        <input type="text" name="mail" id="Email" class="Email" />
+                        <label for="phoneNumf2" class="TelL">Контактний номер телефону</label>
+                        <input type="text" name="tel" id="phoneNum" class="telF">
+
+                        <div class="show-task">
+                            <input type="checkbox" id="chb1f2" />
+                            <label class="delete-task" for="chb1f2">В мене є не погашені кредити в інших банках</label>
+                        </div>
+                        <div class="show-task">
+                            <input type="checkbox" id="chb2f2" />
+                            <label class="delete-task" for="chb2f2">В мене є не погашені кредити в інших банках</label>
+                        </div>
+                        <input type="button" id="send" value="відправити заявку" onclick="prov_adress(form2)" />
+                        <input type="reset" id="resetF2" value="Скасувати заявку"/><span> (Усі дані будуть видалені)</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+</html>

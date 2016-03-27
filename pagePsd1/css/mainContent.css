@@ -1,0 +1,663 @@
+﻿
+/*Вбудований контейнер*/
+.inContainer{
+            height:100%;
+            /*border:1px solid red;*/
+            position:relative;
+            max-width:1180px;
+            /*min-width:700px;*/
+            margin: 0 auto;
+            padding-left:60px;
+            padding-top:50px;
+            padding-bottom:80px;
+        }
+
+        .inContainer p{
+            margin-top:15px;
+            /*line-height:1.3em;*/
+            
+            font:17px Roboto, sans-serif;
+            /*line-height:25px;*/
+        }
+
+        .loyalty p, .FAQ p{
+            max-width:430px;
+        }
+        .How p,.promo p{
+            max-width:500px;
+        }
+
+        .inContainer h1{
+            font-weight:bold;
+            /*padding-top:40px;*/
+            font-size:42px;
+        }
+
+        .inContainer h2{
+            /*margin-top:40px;
+            padding-top:20px;*/
+            font-weight:bold;
+            font-size:38px;
+        }
+
+        .inContainer h3{
+            margin-top:20px;
+            font-size:22px;
+            font-weight:bold;
+        }
+
+        .inContainer ul{
+           margin-top:25px;
+           margin-left:22px;
+           list-style:url(../images/check.png);
+           width:500px;
+        }
+
+        .inContainer li{
+            margin-top:13px;
+        }
+
+
+        .inContainer input{
+           /*font: 12pt Arial,sans-serif;*/
+           height:36px;
+           /*outline: none;*/
+           color:#000!important;
+           margin-top:20px;
+       }
+
+        /*.inContainer input[type=button]:hover{
+            cursor:pointer;
+        }
+        .inContainer input[type=reset]:hover{
+            cursor:pointer;
+        }
+        .inContainer input[type=submit]:hover{
+            cursor:pointer;
+        }*/
+
+        .inContainer input[type="text"]:active{
+            border-color:#dcdf3c;
+            color:#000;
+        }
+
+        .inContainer input[type="text"]:focus{
+            border-color:#dcdf3c;
+            color:#000;
+        }
+
+        .inContainer input[type="button"]{
+           /*display:inline-block;*/
+           height:48px;
+           border-width:2px;
+           border-style: solid;
+           padding:0 28px;
+           /*background-color:#fff;*/
+       }
+
+       /*.inContainer input[type="button"]:hover{
+           background-color:#7196da;
+       }
+
+       .inContainer input[type="button"]:active{
+           background-color:#557dc8;
+           border-color: #557dc8;
+       }*/
+
+       .inContainer select{
+           height:36px;
+           /*font: 13pt Arial,sans-serif;*/
+           padding-left:10px;      
+           /*margin-left:10px;*/   
+           outline: none;
+           color:#000;
+
+       }
+
+       .inContainer input[type=checkbox]:hover{
+           background-color:red;
+       }
+
+
+
+
+        /*slider*/
+        .slider{
+            background-color:#7196da;
+            position:relative;
+            color:#fff;
+        }
+        
+        .slider h1{
+            margin:0;
+            /*padding-top:60px;*/
+            font-size:96px;
+        }
+
+        .slider ul{
+            list-style:none;
+            margin-left:0;
+        }
+
+        .slider .inContainer> p{
+            margin-top:38px;
+            font-size:40px;
+        }
+
+        .slider ul li{
+            /*margin-top:18px;*/
+            font-size:22px;
+            color:#384b6d;
+         }
+
+        .slider ul li:first-child{
+            color:#fff;
+        }
+
+        .MinSumDep {
+            margin-top:30px;
+            color:#b8cbed;
+            font-size:15px;
+            /*padding-bottom:160px;*/
+        }
+
+        .MinSumDep p:last-child{
+            margin:0;
+            font-size:26px;
+            color:#fff;
+        }
+
+        .sliderMark{
+            position:absolute;
+            /*padding-bottom:20px;*/
+            width:35%;
+            background-color:#dcdf3c;
+            right:20px;
+            bottom:-30px;
+            color:#000;
+            z-index:1;
+        }
+
+        .sliderMark p{
+            margin:0;
+            text-align:justify;
+            /*margin-top:25px;*/
+            font-size:13.7pt;
+            padding-left:26px;
+            padding-right:40px;
+            padding:20px 40px 30px 26px;
+        }
+        /*slider*/
+
+
+        /*Taxes*/
+        .Taxes .inContainer{
+            /*position:relative;*/
+            background-color:#fff;
+            padding-bottom:0;
+        }
+
+       .Taxes p{ 
+           margin:0;
+           /*font:13px Roboto, sans-serif;*/
+       }
+
+       .Taxes select{
+           margin-left:10px;
+           border:2px solid #7196da;
+           vertical-align:middle;
+       }
+       /*
+       .Taxes select:hover{
+           background-color:#7196da;
+       }
+
+       .Taxes select:active{
+           background-color:#557dc8;
+           border-color: #557dc8;
+       }*/
+
+       .Taxes option:hover{
+           background-color:#7196da;
+       }
+
+       .Taxes option:active{
+           background-color:#557dc8;
+       }
+       
+       .Taxes table{
+           margin-top:35px;
+           text-align:left;
+           font-size:20px;
+       }
+
+       td{
+           padding-top:26px;
+       }
+
+       col{
+           width:150px;
+       }
+
+       td:first-child{
+           font-family:Roboto, sans-serif;
+       }
+
+       tr:first-child{
+           color:#b2b2b2;
+           font-size:13px;
+       }
+
+       .blueButton input{
+           border-color: #7196da;
+       }
+
+       .blueButton input:hover,.blueButton input:focus{
+           background-color:#7196da;
+       }
+
+       .blueButton input:active{
+           background-color:#557dc8;
+           border-color: #557dc8;
+       }
+
+
+
+
+
+       .displayOn640{
+           display:none;
+       }
+       
+       /*Taxes*/
+
+
+       /*How*/
+       .How{
+            /*margin-top:60px;*/
+            /*height:500px;*/
+            position:relative;
+            background-color:#7196da;
+            color:#fff;
+       }
+
+       .HowContent{
+           width:55%;
+           /*padding-bottom:20px;*/
+       }
+
+       /*.HowContent >*:not(h1){
+           font-family:Roboto, sans-serif;
+       }*/
+
+       .HowContent h3{
+           font-weight:bold;
+           font-family:Roboto, sans-serif;
+           padding-left:30px;
+           background-image:url(../images/phone1.png);
+           background-repeat:no-repeat;
+           background-position:center left;
+       }
+
+       .HowContent ul{
+           padding:20px 0 10px 0;
+           margin:0;
+           list-style:none;
+       }
+
+       .MapHow{
+           position:absolute;
+           top:0;
+           right:0;
+           width:30%;
+           height:100%;
+           background-image:url(../images/map.jpg);
+           background-position-x:-150px;
+           text-align:center; 
+       }
+
+       .MapHow input[type="button"]{
+           /*position:absolute;*/
+           margin-top:400px;
+           bottom:19px;
+           padding:0;
+           width:90%;
+           /*left:15px;
+           right:15px;*/
+       }
+       /*How*/
+
+       /*Form1*/
+       .Form{
+            /*margin-top:20px;*/
+            border:1px solid #ebed88;
+            /*height:560px;*/
+            position:relative;
+            background-color:#f8f8e7;
+            /*padding-bottom:40px;*/
+       }
+
+       /*.Form*/ form{
+           margin:auto;
+           max-width:540px;
+           text-align:left;
+       }
+
+       /*.Form form *{
+           display:block;
+       }*/
+
+       .Form input,.Form label{
+           /*margin-top:20px;*/
+       }
+
+       /*.Form*/ .radioBtn{
+           margin:0;
+           letter-spacing:-8px;
+       }
+
+       form input[type="button"]{
+           border-color:#dcdf3c;
+       }
+
+       form .activeBtn{
+           background-color:#dcdf3c;
+       }
+
+       form  input[type="button"]:hover{
+           background-color:#f4f750;
+           border-color:#f4f750;
+       }
+
+       form  input[type="button"]:active{
+           background-color:#dcdf3c;
+           border-color:#dcdf3c;
+       }
+
+       .dani{
+           position:relative;
+           width:100%;
+       }
+
+       .dani input{
+           width:100%;
+           border:2px solid #c6c6b9;
+       }
+     
+
+       /*.Form input[type="submit"],.form2 input[type=button]{
+           border-color:#dcdf3c;
+           background-color:#fff;
+       }
+
+       .Form input[type="submit"]:hover,.form2 input[type=button]:hover{
+           background-color:#f4f750;
+           border-color:#f4f750;
+       }
+
+       .Form input[type="submit"]:active,.form2 input[type=button]:active{
+           background-color:#dcdf3c;
+           border-color:#dcdf3c;
+       }*/
+
+       form label{
+           position:absolute;
+           display:block;
+           margin-top:29px;
+           margin-left:10px;
+       }
+       /*Form1*/
+
+       /*Form2*/
+       .form2Margin{
+           top:0;
+           left:0;
+           position:fixed;
+           width:100%;
+           height:100%;
+           background-color:#fff;
+           z-index:10;
+           display:none;
+       }
+
+       .form2Margin >.inContainer{
+           position:relative;
+           margin:0 0;
+           width:95%;
+           max-width:none;
+           
+           top:50px;           
+           background-color:#f8f8e8;
+           border:1px solid #f2f2d9;
+           height:100%;
+           z-index:11;
+       }
+
+       .logo2{
+           position:absolute;
+           top:-52px;
+       }
+
+       #closeF2{
+           background-color:#f8f8e8;
+           background-image:url(../images/closeF2.png);
+           background-repeat:no-repeat;
+           width:22px;
+           height:21px;
+           position:absolute;
+           top:20px;
+           right:20px;
+       }
+
+       .form2{
+           position:relative;
+           left:50px;
+           margin:0 auto;
+           padding-top:30px;
+           width:40%;
+           /*height:100%;*/
+       }
+
+       .form2 h2{
+           font-size:30px;
+       }
+
+       /*.form2 input{
+           margin-top:5px;
+           color:#dcdf3c;
+       }*/
+
+       /*.form2 input[type=button]{
+           margin-top:40px;
+       }*/
+
+       .form2 input[type=reset]{
+           /*display:inline-block;*/
+           /*padding:0!important;
+           margin:0!important;*/
+           background-color:#ffc2bb;
+           border:none;
+           /*margin-top:5px!important;*/
+           height:23px;
+           width:135px;
+       }
+
+       /*.form2 label{
+           position:relative;
+           top:32px;
+           padding-left:10px;
+       }*/
+
+       .form2 .show-task{
+           margin-top:10px;
+       }
+       .form2 .show-task label{
+           /*position:static;*/
+           display:inline-block;
+           /*top:0px;*/
+           padding-left:10px;
+           margin:0;
+       }
+
+        /*.form2 input[type="checkbox"]{
+            position:relative;
+            display:inline-block;
+            padding:0;
+            top:13px;
+            margin:0;
+            width:20px;
+            
+        }*/
+
+        /*Form2*/
+
+        /*promo*/
+
+        .promo{
+            margin-top:20px;
+            color:#fff;
+            background-repeat:no-repeat;
+            height:300px;
+        }
+
+       .promo1{
+            /*height:330px;*/
+            position:relative;
+            background-color:#6ad4a6;
+            /*margin-top:20px;
+            color:#fff;*/
+            background-image:url(../images/promo_img1.png);
+            /*background-repeat:no-repeat;*/
+            background-position:right center;
+       }
+
+       .promo1Content{
+           width:85%;
+       }
+
+       .promo1 img{
+           position:absolute;
+           bottom:10px;
+           left:40px;
+       }
+
+       .promo2{
+            /*height:340px;*/
+            /*position:relative;*/
+            background-color:#ebb641;
+            /*margin-top:20px;
+            color:#fff;*/
+            background-image:url(../images/promo2_img1.png);
+            /*background-repeat:no-repeat;*/
+            background-position:right 15px;
+       }
+
+       .promo2Content h2{
+           width:47%;
+       }
+
+       .promo2Content p{
+           /*padding-bottom:20px;*/
+       }
+       /*promo*/
+
+       /*Foter*/
+       footer{
+            /*position:relative;*/
+            background-color:#212628;
+            margin-top:20px;
+            color:#fff;
+            /*padding-right:260px;*/
+            /*padding-bottom:85px;*/
+            margin-right:-20px;
+       }
+
+       footer .inContainer ul{
+            list-style:none;
+            width:100%;
+            margin:0;
+            margin-top:-20px;
+
+       }
+
+       footer ul li{
+           padding:0;
+           float:left;
+           width:270px;
+           /*padding-top:5px;*/
+           margin-right:50px;
+           padding-bottom:20px;
+       }
+
+       footer ul li p:first-child{
+           padding:15px 0;
+       }
+
+       footer .inContainer p{
+           margin-top:0;
+           color:#585b5c;
+       }
+
+       footer a{
+           padding:5px 0;
+           display:block;
+           float:none;
+           color:#fff!important;
+           /*-webkit-transition-property:all;
+           transition-property: all;
+           -webkit-transition-duration: .5s;
+           transition-duration: .5s;*/ 
+       }
+
+       footer a:hover{
+           color:#dbdc4c!important;
+       }
+
+       footer .social a{
+           height:35px;
+           width:35px;
+           display:inline-block;
+           margin-right:9px;
+           background-repeat:no-repeat;
+           background-position:center;
+       }
+
+       .socialFb{
+           background-image:url(../images/fb.png);
+       }
+
+       .socialFb:hover{
+           background-image:url(../images/fb_Hover.png);
+           /*margin-right:9px;
+           margin-top:15px;*/
+       }
+
+       .socialInsta{
+           background-image:url(../images/insta.png);
+       }
+
+       .socialInsta:hover{
+           background-image:url(../images/insta_Hover.png);
+       }
+
+       .socialTw{
+           background-image:url(../images/tw.png);
+       }
+
+       .socialTw:hover{
+           background-image:url(../images/tw_Hover.png);
+       }
+
+       .socialGp{
+           background-image:url(../images/gp.png);
+       }
+
+       .socialGp:hover{
+           background-image:url(../images/gp_Hover.png);
+       }
+
+       #license{
+           clear:both;
+           display:block;
+           padding-top:40px;
+       }

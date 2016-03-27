@@ -1,0 +1,33 @@
+﻿.pagewrapper {
+            height:100%;
+            background-color:#fff;
+            font:15px 'PT Sans', sans-serif;
+            margin:auto;
+        }
+
+        .container{
+            width:auto;
+            margin:auto;
+            margin-right:260px;
+        }
+        input{
+           outline: none;
+           border:none;
+           color:#000;
+           font:15px 'PT Sans', sans-serif;
+        }
+
+        input[type="button"] {
+           cursor: pointer;
+           background-color:#fff;
+        }    
+
+        a{
+            position:relative;
+            outline:none;
+            border:none;
+            -webkit-transition-property:all;
+            transition-property: all;
+            -webkit-transition-duration: .5s;
+            transition-duration: .5s;
+        }

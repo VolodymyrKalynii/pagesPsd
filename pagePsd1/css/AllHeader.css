@@ -1,0 +1,227 @@
+﻿/*Хедер*/
+        header{
+                background-color:#fff;
+                height:70px;
+                max-width: 1180px;
+                margin: 0 auto;
+                color:#fff;
+                position:relative;
+                }
+        .logo{
+                position:absolute;
+                left:40px;
+                top:18px;
+                z-index:1;
+                }
+
+        .headerBar{
+                top:22.5px;
+                float:right;
+                font-size:17px;
+                text-transform:uppercase;
+                color:#000;
+                position:relative;
+        }
+        .headerLi > li{
+            float:left;
+            padding:13px 22.48px 13px 19.57px;
+            position:relative;
+
+        }
+        .headerLi >li:last-child{
+            padding-right:20px;
+        }
+
+        .headerLi li:hover {
+            background-color:#dcdf3c;
+        }
+
+        .headerLi li:hover .SubHeader{
+            z-index:2;
+            min-height:200px;
+            max-height: 1000px;
+            /*overflow:scroll;*/
+            overflow-y:scroll;
+            -webkit-transform: perspective(400px) rotate3d(0, 0, 0, 0);
+            -moz-transform: perspective(400px) rotate3d(0, 0, 0, 0);
+            -ms-transform: perspective(400px) rotate3d(0, 0, 0, 0);
+            -o-transform: perspective(400px) rotate3d(0, 0, 0, 0);
+            transform: perspective(400) rotate3d(0, 0, 0, 0);
+        }
+
+        .SubHeader{
+            background-color:#dcdf3c;
+            /*font-size:18px;*/
+            position:absolute;
+            left:0;
+            top:40px;
+            padding-left: 10px;
+            box-shadow: 0 18px 15px 5px rgba(0,0,0,0.5);
+            text-transform:none;
+
+            /* Щоб зховати треба закоментувати*/
+
+            /*display:block;
+            visibility: visible;
+            max-height: 530px;*/
+
+             /* Щоб був ефект треба розкоментувати*/
+            z-index:2;
+            -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -90deg);
+            -moz-transform: perspective(400px) rotate3d(1, 0, 0, -90deg);
+            -ms-transform: perspective(400px) rotate3d(1, 0, 0, -90deg);
+            -o-transform: perspective(400px) rotate3d(1, 0, 0, -90deg);
+            transform: perspective(400px) rotate3d(1, 0, 0, -90deg);
+            -webkit-transform-origin: 50% 0;
+            -moz-transform-origin: 50% 0;
+            -ms-transform-origin: 50% 0;
+            -o-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+            -webkit-transition: 350ms;
+            -moz-transition:350ms;
+            -ms-transition:350ms;
+            -o-transition:350ms;
+            transition: 350ms;  
+        }
+        
+
+        .SubHeader ul> li{
+            position:relative;
+            width:270px;
+            margin-right:5px;
+            height:50px;
+        }
+
+        .SubHeader li:last-child{
+            margin-bottom:20px;
+        }
+        
+        .headerBarLable{
+            color:#4b5153;
+            font-size:15px;
+            height:50px;
+            padding: 18.5px 0;
+            margin-left:9.45px;
+        }
+
+        .SubHeader a{
+            display:block;
+            width:270px;
+            padding: 13.4px 0;
+            padding-left:9px;
+        }
+
+        .InlineLable{
+            position:absolute;
+            margin:0;
+            top:-3px;
+            left:90px;
+        }
+        
+         .bgSlideYellow{
+             width:0;
+             /*height:50px;*/
+             background-color:#f4f750;
+        } 
+
+         /*.bgSlideYellow:hover{
+             width:100%;
+             background-color:#f4f750;
+        }*/
+
+         .otherSection4Coll{
+             left:-900px;
+             width:1160px;
+             overflow: hidden;
+         }
+
+         .otherSection2Coll{
+             width:600px;
+         }
+
+         .otherSection ul  {
+             float:left;
+             margin-right:5px;
+         }
+         
+         /*.otherSection a{
+             width:275px;
+         }*/
+
+         .SubHeadercalk{
+             clear:both;
+             /*width:100%;*/
+             border-top:1px solid #c2c52e;
+         }
+
+         .SubHeadercalk a{
+             /*display:block;*/
+             /*width:250px;*/
+             max-width:250px;
+             height:64px;
+             margin-top:20px;
+             margin-bottom:19px;
+             background-color:#c2c52e;
+             /*font-size:18px;*/
+             padding-top:20.67px;
+             padding-left:25.6px;
+         }
+
+         .SubHeaderSearch{
+             height:60px;
+             width:100%;
+             border-bottom:1px solid #c2c52e;
+         }
+         .SubHeaderSearch input[type="text"]{
+             /*outline: none;
+             border:none;*/
+             background-color:#dcdf3c;
+             background-image:url(../images/searchBlack.png);
+             background-repeat:no-repeat;
+             background-position:12px;
+             height:100%;
+             width:90%;
+             font-size:24px;
+             color:#4b5153;
+             /*font: Arial, sans-serif;*/
+             font-weight:bold;
+             padding-left:45px;
+         }
+
+         .SubHeaderSearch input[type="button"]{
+             float:right;
+             /*border:none;
+             outline: none;*/
+             background-color:#dcdf3c;
+             background-image:url(../images/buttonSearchClear.png);
+             background-repeat:no-repeat;
+             width:36px;
+             height:36px;
+             margin-right:20px;
+             margin-top:12.8px;
+
+         }
+         /*.SubHeaderSearch input[type="button"]:hover{
+             cursor:pointer; 
+         }*/
+
+         .SubHeaderSearch input[type="button"]:active{
+             /*cursor:pointer;*/
+             background-image:url(../images/buttonSearchClearActive.png);
+             background-repeat:no-repeat;
+         }
+
+         .SubHeader  a:active{
+             background-color:#c2c52e;
+             /*height:auto;
+             border:none;
+             outline: none;*/
+         }
+
+         .SubHeadercalk a:active{
+             background-color:#c2c52e;
+             /*height:64px;
+             border:none;
+             outline: none;
+             width:auto;*/
+         }
