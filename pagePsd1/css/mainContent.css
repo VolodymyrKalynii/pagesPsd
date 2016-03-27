@@ -202,11 +202,11 @@
            /*font:13px Roboto, sans-serif;*/
        }
 
-       .Taxes select{
+       /*.Taxes select{
            margin-left:10px;
            border:2px solid #7196da;
            vertical-align:middle;
-       }
+       }*/
        /*
        .Taxes select:hover{
            background-color:#7196da;
@@ -550,10 +550,6 @@
             background-image:url(../images/promo2_img1.png);
             /*background-repeat:no-repeat;*/
             background-position:right 15px;
-       }
-
-       .promo2Content h2{
-           width:47%;
        }
 
        .promo2Content p{

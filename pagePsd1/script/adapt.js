@@ -4,9 +4,6 @@
         $('.activeBtn').val('телефонна консультація');
 
         $('footer .inContainer .foter1col ').append($('footer .inContainer  .social'));
-        //$('#field').click(function () {
-        //    $('.left_top_sidebar a').css({ 'visibility': 'hidden' })
-        //})
     } else {
         $('.slider h1').text('депозит довіра');
         $('.activeBtn').val('консультація');

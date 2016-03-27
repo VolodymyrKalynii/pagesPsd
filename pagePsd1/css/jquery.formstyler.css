@@ -249,6 +249,11 @@
     width:100%;
 	cursor: pointer;
 }
+
+.Taxes .jq-selectbox{
+    width:15%;
+    margin-top:0;
+}
 .jq-selectbox__select {
 	height: 36px;
     background-color:#fff;
@@ -258,6 +263,10 @@
     outline: none;
     color:#000;
 }
+
+.Taxes .jq-selectbox__select{
+    border:2px solid #218db9;
+}
 .jq-selectbox__select:hover {
 	background-color:#f4f750;
 }
@@ -265,6 +274,17 @@
 	background-color:#dcdf3c;
     border-color:#dcdf3c;
 }
+
+.Taxes .jq-selectbox__select:hover {
+	background-color:#6dbdde;
+}
+.Taxes .jq-selectbox__select:active {
+	background-color:#218db9;
+    border-color:#218db9;
+}
+
+
+
 
 .jq-selectbox__select-text {
     padding-top:5px;
@@ -303,6 +323,12 @@
     border-top:none;
 }
 
+.Taxes .jq-selectbox__dropdown {
+	background: #6dbdde;
+    border:2px solid #218db9;
+}
+
+
 .jq-selectbox ul {
 	margin: 0;
 	padding: 0;
@@ -326,7 +352,14 @@
 
  .li_hoverr{
    background-color:#dbde3c;
-        }
+}
+
+.Taxes .jq-selectbox li.selected {
+	background-color: #6dbdde;
+}
+.Taxes .jq-selectbox li:hover {
+	background-color: #218db9;
+}
 
 
 

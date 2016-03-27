@@ -40,8 +40,7 @@
             z-index:2;
             min-height:200px;
             max-height: 1000px;
-            /*overflow:scroll;*/
-            overflow-y:scroll;
+            /*overflow-y:scroll;*/
             -webkit-transform: perspective(400px) rotate3d(0, 0, 0, 0);
             -moz-transform: perspective(400px) rotate3d(0, 0, 0, 0);
             -ms-transform: perspective(400px) rotate3d(0, 0, 0, 0);
@@ -51,7 +50,6 @@
 
         .SubHeader{
             background-color:#dcdf3c;
-            /*font-size:18px;*/
             position:absolute;
             left:0;
             top:40px;

@@ -16,6 +16,8 @@ function prov_adress(obj) {
 }
 
 $(document).ready(function () {
+
+
     //Ховаємо форму 2
     $('#closeF2, .form2Margin,#resetF2,send').click(function () {
         $('.form2Margin').css({'display':'none'})
@@ -27,11 +29,12 @@ $(document).ready(function () {
 
 
     //Наведення на чекбокс
-    $('.jq-selectbox li').hover(function () {
-        $('.jq-selectbox__select').addClass('li_hoverr');
-    }, function () {
-        $('.jq-selectbox__select').removeClass('li_hoverr');
-    });
+
+    //$('.jq-selectbox li').hover(function () {
+    //    $('.jq-selectbox__select').addClass('li_hoverr');
+    //}, function () {
+    //    $('.jq-selectbox__select').removeClass('li_hoverr');
+    //});
     $('.show-task').hover(function () {
         $(this).children('.delete-task').css('color', '#dcdf3c');
         $(this).children('.jq-checkbox').addClass('jq-checkbox_hover');
@@ -43,38 +46,55 @@ $(document).ready(function () {
 
 
 
-    //Анімація лейблів форм корявенько(
+    //Анімація лейблів форм
     $(':input[text]').val('');
-    $('.PIB').hover(function () {
-        $('.PIBL').animate({ 'left': '-40px' });
-    },
-    function () {
-        if ($(this).val() == '') {
-            $('.PIBL').animate({ 'left': '0px' });
+
+    $('.inputContainer').hover(function () {
+        $an = $(this).children('label').width()
+        $(this).children('label').animate({ 'left': -$an-20 });
+    }, function () {
+        if ($(this).children('input').val() == '') {
+            $(this).children('label').animate({ 'left': '0px' });
         }
-    });
-    $('.Email').hover(function () {
-        $('.EmailL').animate({ 'left': '-60px' });
-    },
-    function () {
-        if ($(this).val() == '') {
-            $('.EmailL').animate({ 'left': '0px' });
-        }
-    });
-    $('.telF').hover(function () {
-        $('.TelL').animate({ 'left': '-205px' });
-    },
-    function () {
-        if ($(this).val() == '') {
-            $('.TelL').animate({ 'left': '0px' });
-        }
-    })
+
+    }
+    )
+
+
+
+    
+    //
+
+    //$('.PIB').hover(function () {
+    //    $('.PIBL').animate({ 'left': '-40px' });
+    //},
+    //function () {
+    //    if ($(this).val() == '') {
+    //        $('.PIBL').animate({ 'left': '0px' });
+    //    }
+    //});
+    //$('.Email').hover(function () {
+    //    $('.EmailL').animate({ 'left': '-60px' });
+    //},
+    //function () {
+    //    if ($(this).val() == '') {
+    //        $('.EmailL').animate({ 'left': '0px' });
+    //    }
+    //});
+    //$('.telF').hover(function () {
+    //    $('.TelL').animate({ 'left': '-205px' });
+    //},
+    //function () {
+    //    if ($(this).val() == '') {
+    //        $('.TelL').animate({ 'left': '0px' });
+    //    }
+    //})
 });
 
 
 //Стилізація селектів
 (function ($) {
     $(function () {
-        $('.dani select, #chb2f2,#chb1f2').styler();
+        $('.dani select, #chb2f2,#chb1f2, .Taxes select').styler();
     });
 })(jQuery);
