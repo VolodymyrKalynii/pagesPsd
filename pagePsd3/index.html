@@ -1,0 +1,343 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/StyleSheet.css"/>
+    <style>
+
+        /*Екрани 720-960рх*/
+        @media(min-width:720px) and (max-width:960px){
+            body{
+                font-size:15px;
+            }
+
+            .navigation li.active a:after,
+            .navigation li a:hover:after{
+                bottom:-22px;
+            }
+
+            .container{
+                max-width:960px;
+                width:auto;
+                min-width:720px;
+            }
+
+            #footer p{
+                width:73%;
+            }
+
+            .feature_img{
+                width:100%;
+                margin-bottom:20px;
+            }
+
+            .feature_txt{
+                width:100%;
+                height:auto;
+            }
+
+            .article_item{
+                margin-right:2.12%;
+            }
+
+            .news_panel span{
+                padding:0 5px;
+            }
+        }
+
+        /*Екрани менше 720рх*/
+        @media(max-width:719px){
+            body{
+                font-size:17px;
+            }
+
+            .container{
+                width:auto;
+            }
+
+            .navigation li a{
+                text-transform:uppercase;
+            }
+
+            .navigation li.active a:after,
+            .navigation li a:hover:after{
+                bottom:-22px;
+            }
+
+            .article_item{
+                width:100%;
+                height:auto;
+                padding:5% 10%;
+                margin-bottom:20px;
+            }
+
+            .article_item img{
+                width:100%;
+                height:auto;
+            }
+
+             .feature_img{
+                 width:100%;
+                 height:auto;
+                 margin-bottom:20px;
+             }
+
+             .feature_txt{
+                width:100%;
+                height:auto;
+             }
+
+             .sidebar{
+                 display:none;
+             }
+
+             .content{
+                 margin:0;
+             }
+
+             footer p{
+                 display:none;
+             }
+
+        }
+    </style>
+    <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <div id="header">
+        <div class="container clearfix">
+            <div class="logo left">
+                <a href="/">g</a>
+                <span>
+                    Good Inc.
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="nav">
+        <div class="container clearfix">
+            <ul class="navigation left">
+                <li class="active"><span><a href="#">Portfolio</a></span></li>
+                <li><span><a href="#">Services</a></span></li>
+                <li><span><a href="#">Staff</a></span></li>
+                <li><span><a href="#">Articles</a></span></li>
+                <li><span><a href="#">Contact</a></span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="panel clearfix">
+            <div class="search-wrap left">
+                <form>
+                    <input class="search" type="text" placeholder="Search for somthing here" />
+                </form>
+            </div>
+            <div class="social right">
+                <a class="tw" href="#">Twitter</a>
+                <a class="fb" href="#">Facebook</a>
+                <a class="rs" href="#">RSS</a>
+                <a class="em" href="#">Mail</a>
+            </div>
+        </div>
+        <div id="feature" class="clearfix">
+            <div class="feature_img left">
+                <img src="images/featufe_img.jpg" alt="Alternate Text" />
+                <div class="feature_descr">
+                    <p>
+                        Good Inc. image caption to go here
+                    </p>
+                </div>
+            </div>
+            <div class="feature_txt left">
+                <h4>Housework can't kill<br /> you, but why take a chance?  </h4>
+                <p>Quisque accumsan eleifend dolor, nec bibendum nibh ultricies at. Nunc convallis risus sit amet augue bibendum non lobortis eros interdum. Maecenas quis risus felis, at volutpat elit...</p>
+                <div class="text-right">
+                    <span class="date">14th April 2013</span>
+                </div>
+            </div>
+        </div>
+        <div id="articles" class="clearfix">
+            <div class="article_item">
+                <div class="article_img">
+                    <div class="truk"><a href="#">+</a></div>
+                    <a href="#"><img src="images/article1.jpg" alt="" /></a>
+                </div>
+                <div class="articte_text">
+                    <h3 class="title"><a href="#">Taste & Sounds from Thailand</a></h3>
+                    <p>We've made some small changes to BlazRobar.com...  </p>
+                </div>
+            </div>
+            <div class="article_item">
+                <div class="article_img">
+                    <div class="truk"><a href="#">+</a></div>
+                    <a href="#"><img src="images/article2.jpg" alt="" /></a>
+                </div>
+                <div class="articte_text">
+                    <h3 class="title"><a href="#">BlazRobar.com is awesome for PSD</a></h3>
+                    <p>We've made some small changes to BlazRobar.com...  </p>
+                </div>
+            </div>
+            <div class="article_item">
+                <div class="article_img">
+                    <div class="truk"><a href="#">+</a></div>
+                    <a href="#"><img src="images/article3.jpg" alt="" /></a>
+                </div>
+                <div class="articte_text">
+                    <h3 class="title"><a href="#">Nice Looking  Mountains Ah?</a></h3>
+                    <p>We've made some small changes to BlazRobar.com...  </p>
+                </div>
+            </div>
+        </div>
+        <div id="middle" class="clearfix">
+            <div class="sidebar right">
+                <div class="news_bl">
+                    <div class="article_img">
+                        <div class="truk"><a href="#">+</a></div>
+                        <a href="#"><img src="images/news_img.jpg" alt="" /></a>
+                    </div>
+                    <div class="articte_text">
+                        <h3 class="title"><a href="#">Nice Looking  Mountains Ah?</a></h3>
+                        <p>Quisque accumsan eleifend dolor, nec bibendum nibh ultricies at. Nunc convallis risus sit amet augue bibendum non lobortis eros interdum. Maecenas quis risus felis, at volutpat elit. Proin vel nisl in orci venenatis suscipit eget sed lectus.</p>
+                    </div>
+                </div>
+                <div class="recent_posts">
+                    <h5 class="title">Housework can't kill you, but why take a chance?  </h5>
+                    <p>Quisque accumsan eleifend dolor, nec bibendum nibh ultricies at. Nunc convallis risus sit amet augue bibendum non lobortis eros interdum...</p>
+                    <span class="article_date date_border">13th January 2013</span>
+                </div>
+                <div class="recent_posts">
+                    <h5 class="title">My fake plants died because I did not pretend to water them.</h5>
+                    <p>Quisque accumsan eleifend dolor, nec bibendum nibh ultricies at. Nunc convallis risus sit amet augue bibendum non lobortis eros interdum...</p>
+                    <span class="article_date">10th January 2013</span>
+                </div>
+                <div class="recent_pages">
+                    <h5>About Us</h5>
+                    <span>(Blaz Robar)</span>
+                </div>
+                <div class="recent_pages">
+                    <h5>How to</h5>
+                    <span>(Jamie Oliver)</span>
+                </div>
+                <div class="recent_pages">
+                    <h5>Write for us</h5>
+                    <span>(Bill Muarry)</span>
+                </div>
+                <div class="recent_pages">
+                    <h5>Video Testimonails</h5>
+                    <span>(John Smith)</span>
+                </div>
+            </div>
+            <div class="content">
+                <div class="news_item">
+                    <div class="movie"></div>
+                    <h4 class="title_content"><a href="#">Good Inc. Good Choice.</a></h4>
+                    <div class="news_panel">
+                        <span class="news_date">14th January 2013</span>
+                        <span class="news_comment">32 Comments</span>
+                        <span class="rate"><span></span></span>
+                        <span class="votes">124 Votes</span>
+                    </div>
+                    <p>I believe that if life gives you lemons, you should make lemonade... And try to find somebody whose life has given them vodka, and have a party.</p>
+                </div>
+                <div class="news_item selected">
+                    <div class="movie"></div>
+                    <h4 class="title_content"><a href="#">Behind every great man is a woman rolling</a></h4>
+                    <div class="news_panel">
+                        <span class="news_date">13th January 2013</span>
+                        <span class="news_comment">312 Comments</span>
+                        <span class="rate"><span></span></span>
+                        <span class="votes">1254 Votes</span>
+                    </div>
+                    <p>Quisque accumsan eleifend dolor, nec bibendum nibh ultricies at. Nunc convallis<br /> risus sit amet augue bibendum non lobortis eros interdum. Maecenas quis risus</p>
+                </div>
+                <div class="news_item middle">
+                    <div class="movie"></div>
+                    <h4 class="title_content"><a href="#">A day without sunshine is like, you know, night.</a></h4>
+                    <div class="news_panel">
+                        <span class="news_date">13th January 2013</span>
+                        <span class="news_comment">312 Comments</span>
+                    </div>
+                </div>
+                <div class="news_item small">
+                    <div class="movie"></div>
+                    <h5 class="title_content"><a href="#">As a child my family's menu consisted of two choices: take it</a></h5>
+                    <div class="news_panel">
+                        <span class="news_date">13th January 2013</span>
+                        <span class="news_comment">312 Comments</span>
+                    </div>
+                </div>
+                <div class="news_item small">
+                    <div class="movie"></div>
+                    <h5 class="title_content"><a href="#">Get your facts first, then you can distort them as you please. </a></h5>
+                    <div class="news_panel">
+                        <span class="news_date">13th January 2013</span>
+                        <span class="news_comment">312 Comments</span>
+                    </div>
+                </div>
+                <div class="news_item small">
+                    <div class="movie"></div>
+                    <h5 class="title_content"><a href="#">As a child my family's menu consisted of two choices: take it</a></h5>
+                    <div class="news_panel">
+                        <span class="news_date">13th January 2013</span>
+                        <span class="news_comment">312 Comments</span>
+                    </div>
+                </div>
+                <div class="news_item small">
+                    <div class="movie"></div>
+                    <h5 class="title_content"><a href="#">Get your facts first, then you can distort them as you please.</a></h5>
+                    <div class="news_panel">
+                        <span class="news_date">13th January 2013</span>
+                        <span class="news_comment">312 Comments</span>
+                    </div>
+                </div>
+                <div class="read_more">
+                    <a href="#">Read more</a>
+                </div>
+                <div class="aside">
+                    <h3 class="title"><a href="#">Nice text boxage here</a></h3>
+                    <p class="bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus. Pellentesque ullamcorper mauris vitae sapien bibendum tincidunt.</p><br />
+
+                    <p class="bold">Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum consectetur iaculis est, at dapibus purus malesuada vitae. Mauris sollicitudin aliquam scelerisque. Vestibulum ante <span>primis in faucibus orci</span> luctus et ultrices posuere cubilia Curae; Donec et mi sem. Duis tristique elementum tristique. Sed ac magna quis erat sagittis suscipit. Phasellus faucibus rhoncus massa, non laoreet lorem fringilla non.</p>
+                </div>
+                <div class="date_like">
+                    <div class="left">19th April</div>
+                    <div class="right">23</div>
+                </div>
+                <div id="aside1" class="aside clearfix">
+                    <div class="aside_img">
+                        <a href="#"><img src="images/aside_image.jpg" alt="" /></a>
+                    </div>
+                    <div class="aside_text">
+                        <h3 class="title"><a href="#">I like long walks, especially when they are taken by people who really annoy me.</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus. Pellentesque ullamcorper mauris vitae sapien bibendum tincidunt.<br />
+                           Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum consectetur iaculis est, at dapibus purus malesuada vitae. Mauris smassa, non laoreet lorem fringilla non.</p>
+                    </div>
+                </div>
+                <div class="aside">
+                    <h3 class="title"><a href="#">Nice text boxage here</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus. Pellentesque ullamcorper mauris vitae sapien bibendum tincidunt. Check leo dignissim +<br /><br />
+                        Morbi malesuada mauris sed nibh placerat sit amet posuere libero egestas. Vestibulum consectetur iaculis est, at dapibus purus malesuada vitae. Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec et mi sem. Duis tristique elementum tristique. Sed ac magna quis erat sagittis suscipit. Phasellus faucibus rhoncus massa, non laoreet lorem fringilla non.<br /><br />
+                        Mauris sollicitudin aliquam scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec et mi sem. Duis tristique elementum tristique. Sed ac magna quis erat sagittis suscipit. Phasellus faucibus rhoncus</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="footer">
+            <ul class="clearfix">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Footer Links here</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Page Links also</a></li>
+            </ul>
+            <p>As cross as a hoon my built like a op shop. We're going bored sh*tless heaps she'll be right budgie smugglers. Grab us a durry mate she'll be right dunny rat.<br /> She'll be right larrikin with skite. As stands out like kero it'll be truckie.nch. Lets get some icy pole no dramas as cross as a ya.</p>
+        </div>
+    </footer>
+</body>
+</html>
