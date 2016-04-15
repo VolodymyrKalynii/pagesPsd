@@ -1,0 +1,315 @@
+﻿       /*Загальні стилі*/
+        html{
+            font-size:14px;
+        }
+
+        body{
+            background:url(../images/Background.jpg);
+            font:14px/21px Ariadl,sans-serif;
+        }
+
+        @font-face{
+            font-family:'Helvetica';
+            src:url('../fonts/helveticaneuecyr-light.otf');
+        }
+
+        .page_wrap{
+            margin:0 auto;
+            width:960px;
+            padding:0 10px;
+        }
+
+        /*Шапка*/
+        .top_line{
+            height:7px;
+            background-color:#e2e2e2;
+            opacity:.6;
+            min-width:960px;
+            width:100%;
+        }
+
+        .headrer_container{
+            margin-top:42px;
+            margin-bottom:48px;
+        }
+
+        .header{
+            font-family: 'Pacifico', cursive;
+            font-size:300%;
+            padding-left:8px;
+            color:#474747;
+            padding-top:4px;
+        }
+
+        /*Навігація*/
+        .nav ul{
+            margin-right:-7px;
+        }
+
+        .nav li{
+            float:left;
+            padding-right:50px;
+        }
+
+        .nav li:last-child{
+            padding:0;
+        }
+
+        .nav a{
+            font-family: 'PT Sans', sans-serif;
+            font-size:142.857%;
+            color:#474747;
+            width:auto;
+            height:auto;
+            position:relative;
+            display:block;
+        }
+
+        .nav a:hover:after{
+            content:'';
+            position:absolute;
+            display:block;
+            height:0;
+            width:0;
+            border-top:9px solid #ebebeb;
+            border-left:9px solid transparent;
+            border-right:9px solid transparent;
+            top:-40px;
+            left:35%;
+        }
+
+        .nav span{
+            font-family: 'PT Sans', sans-serif;
+            display:block;
+            font-size:60%;
+            color:#a5a5a5;
+            margin-left:.5px;
+        }
+
+        /*Слайдер*/
+        .slider{
+            width:940px;
+            background:rgba(244,244,244,.9);
+        }
+
+        .slider_img{
+            height:423px;
+            position:relative;
+        }
+
+        .slider_img img{
+            height:100%;
+            width:100%;
+        }
+
+        .slide{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .active_slide{
+            display:block;
+        }
+
+        /*Позиція слайду*/
+        .slider_img ul{
+            position:absolute;
+            bottom:12px;
+            right:15px;
+        }
+
+        .slider_img li{
+            float:left;
+            height:5px;
+            width:23px;
+            background-color:#fff;
+            margin-right:7px;
+        }
+
+        .slider_img li:last-child{
+            margin-right:0;
+        }
+
+        li.active_dot{
+            background-color:#444;
+        }
+
+        /*Текст слайдера*/
+        .slider_text{
+            padding:18px 16px;
+            padding-right:0;
+            padding-bottom:19px;
+        }
+
+        .slider_text h5{
+            font-weight:normal;
+            font-size:114.286%;
+            color:#474747;
+        }
+
+        .slider_text p{
+            padding-top:9px;
+            line-height:14px;
+            font-size:85.714%;
+            color:#474747;
+            letter-spacing:-0.1px;
+        }
+
+        /*Статті*/
+        .featured{
+            margin-top:70px;
+            margin-left:5px;
+        }
+
+        .featured_item{
+            float:left;
+            margin-right:26px;
+            width:31.4%;
+        }
+
+        .featured_item:last-child{
+            margin-right:0;
+        }
+
+        .featured_item h3.first_icon{
+            background:url(../images/magnify-glass.png) 1px 3px;
+        }
+
+        .featured_item h3.second_icon{
+            background:url(../images/star.png) 2px -1px;
+        }
+
+        .featured_item h3.third_icon{
+            background:url(../images/msg.png) 2px 3px;
+        }
+
+        .featured_item h3.title{
+            padding-left:75px;
+            font-size:142.857%;
+            color:#464646;
+            margin-bottom:24px;
+            background-repeat:no-repeat;
+            padding-top:1px;
+            line-height:24px;
+        }
+
+        .featured_item p,.item_text p{
+            font-family:'Helvetica';
+            font-size:85.714%;
+            line-height:18px;
+            color:#414141;
+            padding-right:20px;
+            margin-bottom:7.5px;
+            letter-spacing:.2px;
+        }
+
+        button{
+            display:inline-block;
+            font-size:85.714%;
+            font-weight:bold;
+            color:#474747;
+            background:url(../images/more.png) no-repeat left center;
+            padding-top:2px;
+            padding-left:26px;
+        }
+
+        /*Портфоліо*/
+        .portfolio{
+            margin-top:50px;
+        }
+        .last_work{
+            text-align:center;
+            background:url(../images/portfolio_bg.png)no-repeat 0 center;
+        }
+
+        .last_work h4{
+            display:inline-block;
+            background:#fff;
+            padding:19px 28px;
+            font-size:128.5714%;
+            margin-left:5px;
+        }
+
+        .portfolio_item{
+            float:left;
+            width:220px;
+            margin-top:35px;
+            margin-right:20px;
+        }
+
+        .item_img{
+            position:relative;
+            height:120px;
+        }
+
+        .p_item_hover{
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:120px;
+            background-color:rgba(0,0,0,.5);
+            opacity:0;
+            color:#fff;
+            text-align:center;
+            transition-property: opacity;
+            -webkit-transition-duration: .5s;
+            transition-duration: .5s;
+        }
+
+        .p_item_hover h6{
+            padding-top:49px;
+        }
+
+        .portfolio_item:hover .p_item_hover{
+            opacity:1;
+        }
+
+        .portfolio_item:last-child{
+            margin-right:0;
+        }
+
+        .portfolio_item .item_text{
+            margin-top:16px;
+            margin-left:1px;
+        }
+
+        .item_text h6{
+            color:#414141;
+            padding-left:2px;
+            margin-bottom:7px;
+        }
+
+        .item_text p{
+            padding:0;
+            margin-bottom:3.7px;
+        }
+
+        .item_text button{
+            margin-left:4px;
+        }
+
+        /*Фотер*/
+        footer{
+            margin-top:62px;
+            background:url(../images/Top-Line1.png) repeat-x;
+            min-width:960px;
+            
+        }
+
+        .footer{
+            width:960px;
+            margin:0 auto;
+            padding:23px 14px 36px 14px;
+            color:#9b9b9b;
+            font-size:85.714%;
+            font-family: 'PT Sans', sans-serif;
+        }
+
+        .footer span{
+            color:#656565;
+        }
