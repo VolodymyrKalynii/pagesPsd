@@ -4,6 +4,15 @@
             background-color:#ebebeb;
             font:14px/24px Arial, sans-serif;
         }
+         @font-face{
+            font-family:'NexaB';
+            src:url('../fonts/Nexa Bold.otf');
+        }
+
+         @font-face{
+            font-family:'NexaL';
+            src:url('../fonts/Nexa Light.otf');
+        }
 
         .container{
             width:960px;
@@ -20,9 +29,9 @@
         .logo a{
             display:inline-block;
             height:65px;
-            width:85px;
+            width:80px;
             background:#f26c4f;
-            font:36px Constantia;
+            font:36px NexaB;
             color:#fff;
             text-align:center;
             vertical-align:middle;
@@ -45,6 +54,7 @@
         }
 
         .logo span{
+            font:36px NexaL;
             margin-left:20px;
             font-size:18px;
             color:#fff;
@@ -56,6 +66,7 @@
         #nav{
             background-color:#474747;
             min-width:960px;
+            padding:4.5px 0;
         }
 
         .navigation li{
@@ -85,7 +96,7 @@
             background:#f26c4f;
             left:0;
             right:0;
-            bottom:-23px;
+            bottom:-27px;
         }
 
         /*Пошук*/
@@ -113,6 +124,7 @@
             margin-left:25px;
             color:#8f8f8f;
             font-size:85.714%;
+            font-family:'Times New Roman';
             height:13px;
             line-height:13px;
             padding-left:20px;
