@@ -1,0 +1,1076 @@
+﻿	/* Загальні стилі*/
+	#wrapper{
+		min-height: 100%;
+		height: auto!important;
+		height: 100%;
+	}
+
+	.container{
+		width: 960px;
+		margin: 0 auto;
+	}
+
+	/* Шапка */
+	.panel-top{
+		height: 35px;
+		background-color: #2a2b2c;
+		border-top: 3px solid #c33;
+		 min-width:960px;
+	}
+
+	/* Соціальні */
+	.social{
+		padding-top: 4px;
+		float: left;
+	}
+
+	.social a{
+		display: inline-block;
+		vertical-align: middle;
+		height: 23px;
+		width: 23px;
+		background: url(../images/social.png) no-repeat center;
+		border-radius: 50%;
+	}
+
+	.social a.s-fb{
+		background-position: 0 0;
+	}
+
+	.social a.s-dr{
+		background-position: -25px 0;
+	}
+
+	.social a.s-tw{
+		background-position: -50px 0;
+	}
+
+	.social a.s-ma{
+		background-position: -75px 0;
+	}
+
+	.social a.s-vi{
+		background-position: -100px 0;
+	}
+	
+
+	.login{
+		float: right;
+		padding-top: 7px;
+	}
+
+	.login a,.login span{
+		color: #fff;
+	}
+	.login a:hover{
+		color: #999;
+	}
+
+	.basket{
+		width: 100px;
+		height: 44px;
+		background: #c33 url(../images/cart.png) no-repeat 9px 5px;
+		border-radius: 0 0 10px 10px;
+		float: right;
+		margin-left: 25px;
+		overflow: hidden;
+	}
+
+	.basket a{
+		height: 44px;
+		display: block;
+		color: #fff;
+		padding: 12px 0 0 40px;
+	}
+
+	#header{
+		padding: 18px 0;
+	}
+
+	#header img,#header span{
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 30px;
+		font-weight: 400;
+		line-height: 14px;
+	}
+	
+	/* Навігація*/
+	.nav{
+		margin-top: 25px;
+	}
+
+	.nav li{
+		float: left;
+		position: relative;
+	}
+
+	.nav li+li{margin-left: 30px;}
+
+	.nav a{
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 14px;
+		color: #000;
+	}
+
+	.nav li:before{
+		content: '';
+		position: absolute;
+		display: block;
+		top: -17px;
+		left: 50%;
+		margin-left: -18px;
+		display: none;
+		width: 35px;
+		height: 3px;
+		background: #efc539;
+	}
+
+	.nav li:hover:before{
+		display: block;
+	}
+
+	#home{
+		padding-bottom: 9px;
+		background-color: white;
+		border-bottom: 1px solid #e0e0e0;
+		min-width:960px;
+		margin-bottom: 40px;
+	}
+	.home-bg{
+		min-width:960px;
+		height: 90px;
+		background-color: #c33;
+		box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.25);
+		padding: 20px 0;
+	}
+
+	.home-bg h2{
+		text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+		color: white;
+		font-family: Oswald;
+		font-size: 28px;
+		font-weight: 400;
+		line-height: 28px;
+	}
+
+	/* Хлібні крошки */
+	.bread-crumbs li{
+		float: left;
+	}
+
+	.bread-crumbs a, .home-bg span{
+		text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+		color: white;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 20px;
+	}
+
+	.bread-crumbs a:after{
+		content: "\00BB";
+		width: auto;
+		height: auto;
+		display: inline-block;
+		padding: 0 5px;
+	}
+
+	.bread-crumbs a:hover{
+		color: #333;
+	}
+
+	
+
+	.link-home{
+		width: 36px;
+		height: 33px;
+		background: url(../images/home.png) no-repeat;
+		display: inline-block;
+		float: right;
+		margin-top: 10px;
+	}
+
+	/* Категорії */
+	#shop-menu{
+		padding: 18px 8px;
+		height: 63px;
+		background-color: white;
+		border: 1px solid #eaeaea;
+	}
+
+	.category{float: left;}
+	.category li{
+		float: left;
+		padding: 0 17px 0 7px;
+		background: url(../images/dots.png) no-repeat right 6px;
+
+	}
+
+	.category li:last-child{
+		background: none;
+	}
+
+	.category a{
+		color: #1e1e20;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 20px;
+	}
+
+	.category a:hover{
+		color: #000;
+	}
+
+	.sort{
+		float: right;
+		margin-right: 80px;
+	}
+	
+	/* Кнопки */
+	.list{
+		float: right;
+		vertical-align: middle;
+		padding-right: 17px;
+	}
+
+	.list button{
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.list button+button{
+		margin-left: 10px;
+	}
+
+	.squares{
+		width: 28px;
+		height: 18px;
+	}
+
+	.squares-active{
+		background: url(../images/squares1.png) no-repeat;
+	}
+
+	.squares-nactive{
+		background: url(../images/squares.png) no-repeat!important;
+	}
+
+	.ic-list{
+		width: 30px;
+		height: 19px;
+	}
+
+	.ic-list-active{
+		background: url(../images/list.png) no-repeat!important;
+	}
+
+	.ic-list-nactive{
+		background: url(../images/list1.png) no-repeat;
+	}
+
+	/* Центральна частина */
+	.middle{
+		margin-top: 40px;
+		padding-bottom: 305px;
+	}
+
+	/* Сайдбар */
+	.sidebar{
+		width: 260px;
+		float: right;
+	}
+
+	.sidebar h4{
+		margin-bottom: 10px;
+		padding-bottom: 12px;
+		padding-left: 14px;
+		color: #2a2b2c;
+		font-family: Oswald;
+		font-size: 18px;
+		font-weight: 400;
+		text-transform: uppercase;
+		border-bottom: 1px dotted #d5d5d5;
+		position: relative;
+	}
+
+	.sidebar h4:after{
+		content: '';
+		display: block;
+		width: 40px;
+		height: 7px;
+		background-color: #c33;
+		position: absolute;
+		top: 25px;
+		left: 0px;
+	}
+	
+	/* Ліпші продажі */
+	.b-sallers{
+		padding-left: 14px;
+		margin: 14px 0;
+	}
+
+	.s-item{
+		margin-bottom: 8px;
+	}
+
+	.item-img{
+		float: left;
+	}
+
+	.item-img img{
+		display: block;
+		border: 5px solid #28292a;
+	}
+
+	.item-text{
+		margin-left: 100px;
+		padding-top: 10px;
+	}
+
+	.com-ico{
+		display: inline-block;
+		vertical-align: middle;
+		width: 13px;
+		height: 15px;
+		margin-right: 7px;
+		background: url(../images/comments.png) no-repeat center center;
+	}
+
+	.comments{
+		color: #1e1e20;
+		font-size: 11px;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	
+	/* Списки сайдбару */
+	.sidebar ul{
+		margin: 15px 0 30px;
+		padding-left: 14px;
+		font-size: 13px;
+		line-height: 18px;
+		color: #2a2b2c;
+		font-weight: 700;
+		list-style: url(../images/ls.png);
+		list-style-position:inside; 
+	}
+
+	.sidebar ul li{
+		padding: 10px 0;
+		border-bottom: 1px dotted #9fa0a1;
+	}
+
+	.sidebar ul li:last-child{
+		border-bottom: none;
+	}
+
+	.sidebar ul span{
+		color: #7d7e7e;
+		font-weight: 400;
+	}
+	
+	/* Пошук в сайдбарі */
+	.sf{
+		position: relative;
+		padding-left:14px;
+		margin-top: 15px;
+	}
+
+	.sf input[type='text']{
+		width: 100%;
+		height: 40px;
+		display: block;
+		font-style: italic;
+		padding: 0 40px 0 15px;
+		opacity: 0.5;
+		background-color: white;
+		border: 1px solid #e7e7e7;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), inset 0 0 0 2px white, inset 0 0 9px rgba(237, 237, 237, 0.8);
+	}
+
+	.sf input[type='submit']{
+		display: block;
+		position: absolute;
+		top:0;
+		right: 3px;
+		border: none;
+		width: 33px;
+		height: 40px;
+		opacity: 0.8;
+		background:transparent url(../images/sbtn.png) no-repeat center;
+		cursor: pointer;
+	}
+
+
+
+
+
+
+	/* Головний конктент */
+	.content{
+		margin-right: 285px;
+	}
+
+	/* Окремий продукт */
+	.product{
+		float: left;
+		margin-right: 15px;
+		margin-bottom: 15px;
+		width: 211px;
+		height: 364px;
+		background-color: white;
+		border-radius: 5px;
+		box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+	}
+
+	.product:nth-child(3n){
+		margin-right: 0;
+	}
+
+	/* Картинка продукту */
+	.product img{
+		margin-bottom: 11px;
+		float: left;
+		width: 211px;
+		height: 211px;
+		background-color: black;
+		background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.04) 0%, rgba(93, 93, 93, 0.04) 50%, rgba(0, 0, 0, 0.04) 100%);
+		border: 1px solid black;
+		border-radius: 3px;
+		box-shadow: 0 1px 5px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.01), 0 0 5px rgba(0, 0, 0, 0.49), inset 0 0 0 rgba(255, 255, 255, 0.43);
+	}
+
+	.product-img{
+		position: relative;
+	}
+
+	.product-img span{
+		width: 50px;
+		height: 50px;
+		background:rgba(204,51,51,.8);
+		display: inline-block;
+		position: absolute;
+		border-radius: 50%;
+		left: 7px;
+		top: 10px;
+		text-align: center;
+		color: white;
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 50px;
+		text-transform: uppercase;
+	}
+	
+	/* Загловок, опис та ціна */
+	.product-text h6{
+		color: #282828;
+		font-size: 14px;
+		line-height: 18px;
+		font-weight: 700;
+	}
+	.product-text{padding: 10px;}
+	.product-text h6 span{
+		font-style: italic;
+		font-weight: normal;
+	}
+
+	.product-text p{
+		color: #2a2b2c;
+		line-height: 18px;
+		margin-bottom: 15px;
+	}
+
+	.product-text p span{
+		font-weight: 700;
+	}
+	
+	.old-price,.new-price{
+		display: inline-block;
+		font-weight: 700;
+		line-height: 18px;
+		margin-top: 4px;
+	}
+
+	.old-price{	
+		color: #1e1e20;
+		font-size: 16px;
+	}
+
+	.product:nth-child(4n) .old-price,.product:nth-child(1) .old-price{
+		text-decoration: line-through;
+		font-size: 13px;
+	}
+
+	.new-price{
+		background-color: #c33;
+		color: white;
+		padding: 1px 2px;
+		font-size: 13px;
+	}
+
+	.add-card{
+		display: inline-block;
+		padding: 9px 6px;
+		background-color: #1e1e20;
+		border-radius: 5px;
+		color: white;
+		font-size: 10px;
+		font-weight: 400;
+		line-height: 10px;
+		transition: all .1s;
+	}
+
+	.add-card:hover{
+		background: #888;
+	}
+
+	/* Рейтинг */
+	.rate{
+		margin: 10px 0;
+		height: 15px;
+		width: 82px;
+		background: url(../images/star.png) repeat-x;
+	}
+
+	.rate div{
+		width: 80%;
+		height: 15px;
+		background: url(../images/rstar.png) repeat-x;
+	}
+
+	/* Номери сторінок */
+	.pagination{
+		width: 656px;
+		margin-bottom: 75px;
+		background-color: white;
+		border: 1px solid #eaeaea;
+		padding: 10px 15px;
+	}
+
+	.pagination li{
+		float: left;
+		margin-right: 8px;
+	}
+
+	.pagination li a{
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 20px;
+		color: #1e1e20;
+	}
+
+	.pagination li.active a{
+		color: #c33;
+	}
+
+	/* Футер */
+	#footer{
+		position: relative;
+		height: 305px;
+		padding-top: 25px;
+		margin-top: -305px;
+		background:#191919 url(../images/f-bg.jpg) repeat;
+		min-width: 960px;
+		border-top: 5px solid black;
+
+	}
+
+	#footer *{
+		color: #fff;
+	}
+
+	.f-top{
+		height: 255px;
+	}
+
+	.f-bottom{
+		height: 50px;
+		background-color: #1b1b1b;
+		border: 1px solid black;
+	}
+
+	.f-about{
+		float: left;
+		width: 230px;
+		margin-right: 20px;
+	}
+
+	.f-title{
+		margin-bottom: 15px;
+		font-size: 16px;
+		font-weight: 700;
+		text-transform: inherit;
+	}
+
+	.f-top p{
+		line-height: 18px;
+	}
+
+	.f-about span{
+		font-weight: 900;
+	}
+
+	.f-archives{
+		float: left;
+		margin-right: 20px;
+		width: 210px;
+	}
+
+	.f-archives li{
+		padding: 8px 0;
+		border-bottom: 1px dotted #acaba9;
+	}
+
+	.f-archives li:first-child{
+		padding-top: 0;
+	}
+
+	.f-archives li:last-child{
+		border-bottom: none;
+	}
+
+	.f-posts{
+		float: left;
+		width: 220px;
+		margin-right: 20px;
+	}
+
+	.f-posts .item-text{
+		margin-left: 110px;
+	}
+
+	.f-posts .com-ico{
+		background: url(../images/comments1.png) no-repeat center center;
+	}
+
+	/* Пощук в футері */
+	.f-search{
+		float: right;
+		width: 215px;
+	}
+
+	
+	.fs{
+		display: block;
+		padding-left: 16px;
+		margin-bottom: 30px;
+		background: rgba(0,0,0,.28);
+		border: 1px solid #787979;
+		box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+		color: #aaa;
+		font-size: 12px;
+		font-style: italic;
+		line-height: 30px;
+		width: 100%;
+	}
+
+	.f-search a{
+		display: inline-block;
+		padding: 0 9px;
+		margin-bottom: 4px;
+		line-height: 30px;
+		background-color: #2a2a2a;
+	}
+
+	#footer .social a{
+		background: rgba(255,255,255,.08) url(../images/f-social.png) no-repeat;
+	}
+
+	#footer .social a.s-dr{
+		background-position: -25px 0;
+	}
+
+	#footer .social a.s-tw{
+		background-position: -50.5px 0;
+	}
+
+	#footer .social a.s-ma{
+		background-position: -76.5px 0;
+	}
+
+	#footer .social a.s-vi{
+		background-position: -102.5px 0;
+	}
+
+	.f-bottom .container {
+		padding-top: 12px;
+		font-size: 11px;
+		
+	}
+	.f-bottom .container *{
+		color: #6e6e6e!important;
+		text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+	}
+
+	.f-bottom a+a{
+		margin-left: 16px;
+	}
+
+	.f-bottom p{
+		float: right;
+	}
+	
+	/* Кнопка наверх */
+	.btt{
+		display: inline-block;
+		position: absolute;
+		top: -15px;
+		right: 30px;
+		height: 30px;
+		width:30px;
+		background: url(../images/btt.png) no-repeat;
+	}
+
+
+
+/* Ці стилі взяті з сайту jquery ui */
+/* ------------Повзунок -----------------
+---------------------------------------*/
+.ui-slider {
+    margin-bottom: 10px;
+    position: relative;
+    text-align: left;
+}
+
+/* Ширина, висота і позиціонування для повзунків
+----------------------------------*/
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 15px;
+    height: 15px;
+    cursor: default;
+    -ms-touch-action: none;
+    touch-action: none;
+    cursor:pointer;
+}
+.ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    background-position: 0 0;
+}
+
+/* support: IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {
+    filter: inherit;
+}
+
+/* Висота горизонтальної полоски
+----------------------------------*/
+.ui-slider-horizontal {height: 5px;}
+.ui-slider-horizontal .ui-slider-handle {
+    top: -4px;
+    margin-left: -8px;
+}
+.ui-slider-horizontal .ui-slider-range {top: 0;height: 100%;}
+.ui-slider-horizontal .ui-slider-range-min {left: 0;}
+.ui-slider-horizontal .ui-slider-range-max {right: 0;}
+
+/* Ширина вертикальної полоски
+----------------------------------*/
+.ui-slider-vertical {
+    width: .8em;
+    height: 100px;
+}
+.ui-slider-vertical .ui-slider-handle {
+    left: -.3em;
+    margin-left: 0;
+    margin-bottom: -.6em;
+}
+.ui-slider-vertical .ui-slider-range {left: 0;width: 100%;}
+.ui-slider-vertical .ui-slider-range-min {bottom: 0;}
+.ui-slider-vertical .ui-slider-range-max {top: 0;}
+
+/* Шрифт і розмір тексту
+----------------------------------*/
+.ui-widget {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 1.1em;
+}
+.ui-widget .ui-widget {
+    font-size: 1em;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 1em;
+}
+
+
+#amount, label[for="amount"] {
+	background: transparent; 
+	font-weight: normal;
+	font-size: 13px;
+	color: #2A2B2C !important;
+}
+#amount {width: 100px;}
+.btn-bl {
+	display: inline-block;
+	margin-left: 15px;
+	padding: 9px 10px;
+	font-size: 10px;
+	color:#fff;
+	text-transform: uppercase;
+	border: none;
+	background: #1e1e20;
+	cursor: pointer;
+}
+.s-slider {padding: 0 22px;}
+.s-slider p {margin-bottom: 20px;}
+
+/* Стилізація полоски
+----------------------------------*/
+.ui-widget-content {
+	margin: 25px 0;
+		background-color: white;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    color: #222222;
+    
+}
+.ui-widget-content a {color: #222222;}
+
+/* Стилізація проміжку між повзунками
+----------------------------------*/
+.ui-widget-header {
+    background: #999;
+    color: #222;
+    font-weight: bold;
+}
+.ui-widget-header a {color: #222222;}
+
+/* Стилізація повзунків 
+----------------------------------*/
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+    font-weight: normal;
+    color: #555555;
+    width: 22px;
+	height: 16px;
+	background-color: #c33;
+	border-radius: 3px;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+    color: #555555;
+    text-decoration: none;
+}
+
+/* Стилізація повзунка при наведенні і фокусі
+----------------------------------*/
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+    font-weight: normal;
+    color: #212121;
+}
+
+
+
+
+/* ------ STYLE SELECT -----------------
+--------------------------------------*/
+/* Основна частина */
+.cusel {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    height: 25px;
+    font-size: 12px;
+    border: 1px solid #EAEAEA;
+    background: #fff;
+    vertical-align: middle;
+    cursor: pointer;
+
+}
+/* Стрілочка */
+.cuselFrameRight {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 20px;
+    background: url(../images/select-arrow.png) no-repeat center;
+}
+/* Текст в селекті */
+.cuselText { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 25px;
+    padding: 0 25px 0 5px; 
+    font-weight: bold;
+    font-size: 12px; 
+    line-height: 25px;
+    color: #7e7e7f;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+* html .cuselText {height: 30px;}
+
+/* Оформлення пунктів списку */
+.cusel span { 
+    display: block;
+    padding: 5px 15px; 
+    font-weight: bold;
+    font-size: 13px; 
+    zoom: 1;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* Оформлення пунктів списку при наведенні*/
+.cusel span:hover,
+.cusel .cuselOptHover { background: #eee;}
+
+/* Оформлення активного пункту списку  */
+.cusel .cuselActive,
+.cusel .cuselActive:hover { background: #DA0612; color: #fff;}
+
+/* Оформлення селекту при наведенні і кліку */
+.cusel:hover,
+.cusel:focus,
+.cuselFocus {
+	background: transparent;
+outline: none;}
+
+/* Оформлення стрілки при наведенні і клику */
+.cusel:hover .cuselFrameRight,
+.cusel:focus .cuselFrameRight,
+.cuselFocus .cuselFrameRight {
+    background: transparent url(../images/select-arrow.png) no-repeat center;
+}
+
+/* Видимість випадаючого списку */
+.cuselOpen {z-index: 999;}
+
+/* Оформлення селекту і стрілки disabled */
+.classDisCusel,
+.classDisCusel .cuselFrameRight {
+    background-image: url(../images/select-arrow.png) no-repeat center;
+    cursor: default;
+    color: #ccc;
+}
+/* Оформлення тексту в селекті коли він disabled */
+.classDisCusel .cuselText {
+    cursor: default;
+    color: #ccc;
+}
+
+/* Оформлення випадаючого списку */
+.cusel .cusel-scroll-wrap {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: block;
+    min-width: 100%;
+    width: auto;
+    height: auto !important;
+    visibility: hidden;
+    margin-top:5px;
+    padding: 5px 0;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: #fff;
+    overflow: hidden;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    -ms-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    -o-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.cusel .jScrollPaneContainer {
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+    background: #fff;
+}
+/* Блок для елементів списку з відступом справа для скролу */
+.cusel-scroll-pane {
+    top: 5px;
+    right: 3px;
+    left: 0;
+    width: auto !important;
+}
+
+/* Лінія по якій буде проходити скрол */
+.cusel .jScrollPaneTrack {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    height: 100%;
+    width: 5px !important;
+    background: #EEE;
+}
+
+/* Кнопка для скролу */
+.cusel .jScrollPaneDrag {
+    position: absolute;
+    left: 0px;
+    width: 5px !important;
+    height: 27px !important;
+    background: #6E939E;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.cusel .jScrollPaneDragTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0 !important;
+    overflow: hidden;
+}
+.cusel .jScrollPaneDragBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0 !important;
+    overflow: hidden;
+}
+
+/* Стрілка зверху для скролу */
+.cusel .jScrollArrowUp {
+    position: absolute;
+    top: 0;
+    right: 4px;
+    width: 0 !important;
+    height: 0;
+    cursor: pointer;
+    overflow: hidden;   
+}
+
+/* Стрілка внизу для скролу */
+.cusel .jScrollArrowDown {
+    width: 0 !important;
+    height: 0;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    right: 4px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
